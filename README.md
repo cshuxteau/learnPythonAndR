@@ -5,8 +5,13 @@ I first started learning R for an assigned research project. Soon, I was pointed
 
 I used both languages to conduct data analysis and visualization. This is where I am going to focus on:
     1) key data types
+    
     2) programing structure
+    
     3) data transformation
+    
     4) file IO
+    
     5) data visualization
+    
     6) statistics analysis
