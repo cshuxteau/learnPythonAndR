@@ -22,6 +22,9 @@ y = ["apple","banana", "cherry" ];
 print(y);
 print(type(y))
 
+x = list(y);  # create a list from another list; similar to list.copy()
+print(str(x));
+
 z = ["jan", "feb", "march", True, False, 1, 2]; # you can mix data types
 print(z);
 print(type(z))
@@ -41,6 +44,9 @@ b = [];
 
 print(type(a));
 print(type(b));
+
+x = list(y)
+print(x);
 
 #====================================
 # access elements of the list
