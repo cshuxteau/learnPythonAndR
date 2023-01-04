@@ -313,3 +313,9 @@ for key, value in y.items():
     z[key] = value
 print(z)
 
+# merge two dictionaries using merge operator
+x |= y
+print(x)
+
+# update method
+x.update(y)
