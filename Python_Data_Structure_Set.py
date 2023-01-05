@@ -116,6 +116,15 @@ y = {3, 2, 8, 7, 5}
 # The set which contains the elements which are either in set A or in set B but not in both is called the Python symmetric difference between two given sets.
 print(x ^ y)
 print(y.symmetric_difference(x))
+x.symmetric_difference_update(y)  # Set x to contain the elements in either x or y but not both
+print(x)
+x ^= y
+print(x)
+
+print(x.issubset(y));
+print(x.issuperset(y));
+print(x.isdisjoint(y));
+
 
 # use zip to pair two sets
 for (i1, i2) in zip(x, y):
