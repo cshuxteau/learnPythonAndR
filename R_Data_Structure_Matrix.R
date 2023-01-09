@@ -5,7 +5,7 @@
 # They contain elements of the same atomic types, typically numeric values
 
 # difference than Python
-
+# python array (numpy array) does not have row/col names.  to do that, you can use panda dataframe
 #====================================
 # restart/reset the sample
 #====================================
@@ -106,3 +106,21 @@ x <- matrix(c(1, 2, 3, 4, 5,6, 7, 8), nrow = 4, byrow = T, dimnames = list(c("r1
 y <- x + 10
 print(y)
 print( x * y )
+
+
+
+#====================================
+# Array in R
+# Array in R are similar to matrices but can have more than two dimensions. An array is created using the array() function. 
+# It takes vectors as input and uses the values in the dim parameter to create an array.
+# this is similar to Numpy Array, dim is similar to Shape in Python: 
+# matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]], shape=(3, 3))
+#====================================
+
+# Create two vectors of different lengths.
+x <- c(5,9,3)
+y <- c(10,11,12,13,14,15)
+
+# Take these vectors as input to the array.
+z <- array(c(x,y),dim = c(3,3,2))
+print(z)
