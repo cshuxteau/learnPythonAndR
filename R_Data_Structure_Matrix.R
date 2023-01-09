@@ -80,6 +80,16 @@ x[, "c1", drop = FALSE]
 
 x[c(TRUE, FALSE, TRUE, FALSE),]
 
+# select data element based on certain conditions
+which(x%%2!=0, arr.ind = T)
+
+# use apply function
+apply(x>1, 1 ,which.max)
+
+# use matrix selector
+x[x[,"c1"]==3,]
+
+
 #====================================
 # modify a matrix
 # similar to ndarray in Python
@@ -106,6 +116,18 @@ x <- matrix(c(1, 2, 3, 4, 5,6, 7, 8), nrow = 4, byrow = T, dimnames = list(c("r1
 y <- x + 10
 print(y)
 print( x * y )
+
+x <- matrix(c(10, 8,
+              5, 12), ncol = 2, byrow = TRUE)
+x
+
+y <- matrix(c(5, 3,
+              15, 6), ncol = 2, byrow = TRUE)
+
+x %*% y
+crossprod(x, y)
+
+diag(4)
 
 
 
